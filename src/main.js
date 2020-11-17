@@ -30,8 +30,13 @@ import './assets/vendor/fontawesome-free/css/all.min.css';
 // Vue.loadScript("/vendor/chart.js/Chart.min.js");
 // Vue.loadScript("/js/demo/chart-area-demo.js");
 // Vue.loadScript("/js/demo/chart-pie-demo.js");
-Vue.component('PageWrapper',require('./components/PageWrapper.vue').default);
-Vue.component('Sidebar',require('./components/Sidebar.vue').default);
+Vue.component('mainDashboard',require('./components/dashboard/mainDashboard.vue').default);
+Vue.component('Sidebar',require('./components/public/Sidebar.vue').default);
+Vue.component('pagefooter',require('./components/public/pagefooter').default);
+Vue.component('TopBar',require('./components/public/TopBar.vue').default);
+
+// Vue.component('ContentWrapper',require('./components/Content/ContentWrapper.vue').default);
+// Vue.component('',require('./components/Content/ContentWrapper.vue').default);
 
 
 Vue.config.productionTip = false;

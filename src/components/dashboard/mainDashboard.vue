@@ -3,15 +3,22 @@
     <!-- Page Wrapper -->
     <div id="wrapper">
       <Sidebar></Sidebar>
+      <ContentWrapper></ContentWrapper>
     </div>
     <!-- End of Page Wrapper -->
   </div>
 </template>
 
 <script>
+
+import ContentWrapper from "../dashboard/ContentWrapper";
+
 export default {
-  name: "Page_Wrapper",
+  name: "mainDashboard",
   props: {
+  },
+  components:{
+    ContentWrapper
   }
 };
 </script>
